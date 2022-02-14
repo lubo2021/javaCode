@@ -7,9 +7,9 @@ public class Main {
         Thread thread1=new Thread(new Runnable() {
             @Override
             public void run() {
-                while(true){
+                for(int i=0;i<10;i++){
                     try{
-                        Thread.sleep(2000);
+                        Thread.sleep(200);
                     }catch (Exception e){
                         e.printStackTrace();
                     }
@@ -23,6 +23,7 @@ public class Main {
                             System.out.println(result2);
                         }
                     });
+
                 }
             }
         });
@@ -31,7 +32,7 @@ public class Main {
             public void run() {
                 for(int i=0;i<10;i++){
                     try{
-                        Thread.sleep(2000);
+                        Thread.sleep(200);
                     }catch (Exception e){
                         e.printStackTrace();
                     }
